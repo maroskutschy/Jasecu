@@ -9,7 +9,7 @@ public class FacebookMakePostPage extends BasicActions {
     @FindBy (xpath = "//div[@data-block='true']")
     private WebElement postTextArea;
 
-    @FindBy (xpath = "//button[@data-testid='react-composer-post-button']//span[contains(., 'Post')]")
+    @FindBy (xpath = "//button[@type='submit']//span[contains(., 'Post')]")
     private WebElement postButton;
 
     public FacebookMakePostPage(WebDriver driver) {

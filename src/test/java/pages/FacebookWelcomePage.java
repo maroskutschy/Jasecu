@@ -12,7 +12,7 @@ public class FacebookWelcomePage extends BasicActions {
     @FindBy (xpath = "//a[contains(.,'News Feed')]")
     private WebElement newsFeed;
 
-    @FindBy (xpath = "//span//span[contains(., 'Make Post')]")
+    @FindBy (xpath = "//span//span[contains(., 'Create Post')]")
     private WebElement makePostButton;
 
     public FacebookWelcomePage(WebDriver driver) {
