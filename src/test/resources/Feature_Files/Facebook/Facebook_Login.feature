@@ -4,13 +4,13 @@ Feature: Login to Facebook
 
     # adding comment
     Given I successfully login to facebook with email "jasecuframework@gmail.com" and password "CORRECTPASSWORD"
-    #Then Facebook Welcome Page is successfully displayed
+    Then Facebook Welcome Page is successfully displayed
 
   @LoginTest
   Scenario: Successful Login to Facebook with default credentials
 
     When I login to facebook with default credentials
-    #Then Facebook Welcome Page is successfully displayed
+    Then Facebook Welcome Page is successfully displayed
 
   @LoginTest
   Scenario Outline: Unsuccessful Login to Facebook
