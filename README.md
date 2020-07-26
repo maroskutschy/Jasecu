@@ -1,4 +1,4 @@
-# Video Turorials
+# Video Tutorials
 
 **SEE video tutorial on official jasecu site:**
 
