@@ -72,4 +72,9 @@ public class FacebookStepDefinitios {
         }
     }
 
+    @Given ("^switch to News Feed Most Recent option$")
+    public void swithToNewsFeedMostRecentOption() throws Throwable {
+        facebookWelcomePage.swithToNewsFeedMostRecentOption();
+    }
+
 }

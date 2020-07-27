@@ -15,6 +15,9 @@ public class FacebookWelcomePage extends BasicActions {
     @FindBy (xpath = "//span//span[contains(., 'Create Post')]")
     private WebElement makePostButton;
 
+    @FindBy (xpath = "//a[@aria-label='News Feed Sort options']")
+    private WebElement newsFeedThreeDotsMenu;
+
     public FacebookWelcomePage(WebDriver driver) {
         super( driver );
     }
@@ -28,6 +31,12 @@ public class FacebookWelcomePage extends BasicActions {
         waitForVisibility(makePostButton, "makePostButton");
         click(makePostButton, "makePostButton");
         return new FacebookMakePostPage(driver);
+    }
+
+    public FacebookWelcomePage swithToNewsFeedMostRecentOption() {
+        waitForVisibility(newsFeedThreeDotsMenu, "newsFeedThreeDotsMenu");
+        click(newsFeedThreeDotsMenu, "newsFeedThreeDotsMenu");
+        return this;
     }
 
 }
