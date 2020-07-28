@@ -17,6 +17,12 @@ public class FacebookMakePostPage extends BasicActions {
     }
 
     public FacebookListOfPostsPage makePost (String text) {
+        waitForVisibility(postTextArea, "postTextArea");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         sendKeysViaActionsClass(postTextArea, text, "postTextArea");
         click(postButton, "postButton");
         return new FacebookListOfPostsPage(driver);

@@ -1,8 +1,6 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
@@ -60,7 +58,11 @@ public class BasicActions {
 
     public void click (WebElement element, String elementName) {
         LOGGER.info("Clicking on Element : " + elementName + ".");
-        element.click();
+        try {
+            element.click();
+        } catch (StaleElementReferenceException e) {
+            e.printStackTrace();
+        }
         LOGGER.info("Done");
     }
 
@@ -104,6 +106,13 @@ public class BasicActions {
     public void waitForVisibility(WebElement element, String elementName) {
         LOGGER.info("Waiting for visibility of element : " + elementName + ".");
         wait.until( ExpectedConditions.visibilityOf(element) );
+        LOGGER.info( "Done." );
+    }
+
+    public void javascriptClick(WebElement element, String elementName) {
+        LOGGER.info("Clicking on element: " + elementName);
+        JavascriptExecutor executor = (JavascriptExecutor) getDriver();
+        executor.executeScript("arguments[0].click();", element);
         LOGGER.info( "Done." );
     }
 

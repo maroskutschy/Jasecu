@@ -1,8 +1,10 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class FacebookListOfPostsPage extends BasicActions {
 
@@ -12,7 +14,7 @@ public class FacebookListOfPostsPage extends BasicActions {
     String postTextP1 = "//div[@role='article']//div[contains(@class,'userContentWrapper')]//div[contains(@class,'userContent')]/div[contains(.,'";
     String getPostTextP2 = "')]";
 
-    String postMenuButtonP1 =  "(//a[@data-testid='post_chevron_button'])[";
+    String postMenuButtonP1 =  "(//a[@aria-label='Story options'])[";
     String postMenuButtonP2 = "]";
 
     public FacebookListOfPostsPage(WebDriver driver) {
@@ -31,7 +33,19 @@ public class FacebookListOfPostsPage extends BasicActions {
     }
 
     public FacebookDeletePostPage deletePost (String orderOfPostFromTheTop) {
-        click(postMenuButtonP1 + orderOfPostFromTheTop + postMenuButtonP2, "postMenuButton");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        WebElement element = wait.until( ExpectedConditions.visibilityOfElementLocated(By.xpath(postMenuButtonP1 + orderOfPostFromTheTop + postMenuButtonP2)) );
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(postMenuButtonP1 + orderOfPostFromTheTop + postMenuButtonP2)));
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        click(element, "post menu option");
         waitForVisibility(deletePostMenuOption, "deletePostMenuOption");
         click(deletePostMenuOption, "deletePostMenuOption");
         return new FacebookDeletePostPage(driver);

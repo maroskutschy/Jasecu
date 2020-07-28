@@ -18,6 +18,9 @@ public class FacebookWelcomePage extends BasicActions {
     @FindBy (xpath = "//a[@aria-label='News Feed Sort options']")
     private WebElement newsFeedThreeDotsMenu;
 
+    @FindBy (xpath = "//span[contains(text(),'Most Recent')]")
+    private WebElement mostRecentOption;
+
     public FacebookWelcomePage(WebDriver driver) {
         super( driver );
     }
@@ -36,6 +39,8 @@ public class FacebookWelcomePage extends BasicActions {
     public FacebookWelcomePage swithToNewsFeedMostRecentOption() {
         waitForVisibility(newsFeedThreeDotsMenu, "newsFeedThreeDotsMenu");
         click(newsFeedThreeDotsMenu, "newsFeedThreeDotsMenu");
+        waitForVisibility(mostRecentOption, "mostRecentOption");
+        click(mostRecentOption, "mostRecentOption");
         return this;
     }
 
