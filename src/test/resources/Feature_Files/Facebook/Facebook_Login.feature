@@ -7,10 +7,12 @@ Feature: Login to Facebook
     Then Facebook Welcome Page is successfully displayed
 
   @LoginTest
-  Scenario: Successful Login to Facebook with default credentials
+  Scenario: Successful Login to Facebook with default credentials - Applitools
 
     When I login to facebook with default credentials
     Then Facebook Welcome Page is successfully displayed
+    Then I make Applitools Visual Test validation running via UltraFast Grid with test name: "Test 1" and step name: "Login"
+    #Then I make Applitools Visual Test validation of region: "product_grid" running via UltraFast Grid with test name: "Task 2" and step name: "Filter Results"
 
   @LoginTest
   Scenario Outline: Unsuccessful Login to Facebook
