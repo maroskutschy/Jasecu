@@ -12,7 +12,7 @@ Feature: Login to Facebook
     When I login to facebook with default credentials
     Then Facebook Welcome Page is successfully displayed
     Then I make Applitools Visual Test validation running via UltraFast Grid with test name: "Test 1" and step name: "Login"
-    #Then I make Applitools Visual Test validation of region: "product_grid" running via UltraFast Grid with test name: "Task 2" and step name: "Filter Results"
+    Then I make Applitools Visual Test validation of region: "content_container" running via UltraFast Grid with test name: "Task 2" and step name: "Section with the content"
 
   @LoginTest
   Scenario Outline: Unsuccessful Login to Facebook
