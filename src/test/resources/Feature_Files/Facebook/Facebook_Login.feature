@@ -14,6 +14,12 @@ Feature: Login to Facebook
     Then I make Applitools Visual Test validation running via UltraFast Grid with test name: "Test 1" and step name: "Login"
     Then I make Applitools Visual Test validation of region: "content_container" running via UltraFast Grid with test name: "Task 2" and step name: "Section with the content"
 
+  Scenario: Successful Login to Facebook with specified credentials and Percy validation
+
+    Given I successfully login to facebook with email "jasecuframework@gmail.com" and password "CORRECTPASSWORD"
+    Then Facebook Welcome Page is successfully displayed
+    And I make Percy Visual Test validation with screenshot name: "Welcome Page"
+
   @LoginTest
   Scenario Outline: Unsuccessful Login to Facebook
     When I unsuccessfully login to facebook with email "<email>" and password "<password>"
