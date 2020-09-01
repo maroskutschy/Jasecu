@@ -17,7 +17,8 @@ public class FacebookLoginPage extends BasicActions {
     @FindBy ( name = "pass")
     private WebElement password;
 
-    @FindBy ( xpath = "//input[@data-testid='royal_login_button']")
+    //@FindBy ( xpath = "//input[@data-testid='royal_login_button']")
+    @FindBy ( name = "login")
     private WebElement loginButton;
 
     public FacebookLoginPage(WebDriver driver) {
