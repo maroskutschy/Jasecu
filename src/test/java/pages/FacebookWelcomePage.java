@@ -12,7 +12,9 @@ public class FacebookWelcomePage extends BasicActions {
     @FindBy (xpath = "//div[@role='feed']")
     private WebElement newsFeed;
 
-    @FindBy (xpath = "//span//span[contains(., 'Create Post')]")
+    //@FindBy (xpath = "//span//span[contains(., 'Create Post')]")
+    @FindBy (xpath = "//span[contains(., 'on your mind')]")
+
     private WebElement makePostButton;
 
     @FindBy (xpath = "//a[@aria-label='News Feed Sort options']")

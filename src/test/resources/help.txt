@@ -1,0 +1,2 @@
+Xpath example in Chrome Dev tools:
+$x("your_xpath_here")

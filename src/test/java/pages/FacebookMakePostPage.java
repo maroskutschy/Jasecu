@@ -6,10 +6,11 @@ import org.openqa.selenium.support.FindBy;
 
 public class FacebookMakePostPage extends BasicActions {
 
-    @FindBy (xpath = "//div[@data-block='true']")
+    @FindBy (xpath = "//div[@role='presentation']//div[@data-block='true']")
     private WebElement postTextArea;
 
-    @FindBy (xpath = "//button[@type='submit']//span[contains(., 'Post')]")
+    //@FindBy (xpath = "//button[@type='submit']//span[contains(., 'Post')]")
+    @FindBy (xpath = "(//div[contains(., 'Post') and @role='button' and @tabindex=0])[2]")
     private WebElement postButton;
 
     public FacebookMakePostPage(WebDriver driver) {
@@ -23,8 +24,14 @@ public class FacebookMakePostPage extends BasicActions {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        sendKeysViaActionsClass(postTextArea, text, "postTextArea");
+        //sendKeysViaActionsClass(postTextArea, text, "postTextArea");
+        sendKeys(postTextArea, text, "postTextArea");
         click(postButton, "postButton");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return new FacebookListOfPostsPage(driver);
     }
 
