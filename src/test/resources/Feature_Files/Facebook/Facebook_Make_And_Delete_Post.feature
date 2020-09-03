@@ -21,7 +21,7 @@ Feature: Make and delete the post
   Scenario: Delete the post
 
     Given Facebook Welcome Page is successfully displayed
-    And switch to News Feed Most Recent option
+    #And switch to News Feed Most Recent option
     When I delete following post from the top:
      | Order of post |
      | 2             |
