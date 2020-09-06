@@ -8,7 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class FacebookListOfPostsPage extends BasicActions {
 
-    @FindBy (xpath = "//div[@class='uiContextualLayerPositioner uiLayer']//li[contains(@class,'MenuItem')]//a//span//span[contains(.,'Delete')]")
+    //@FindBy (xpath = "//div[@class='uiContextualLayerPositioner uiLayer']//li[contains(@class,'MenuItem')]//a//span//span[contains(.,'Delete')]")
+    @FindBy (xpath = "//span[@dir='auto' and contains(.,'Delete')]")
     private WebElement deletePostMenuOption;
 
     //String postTextP1 = "//div[@role='article']//div[contains(@class,'userContentWrapper')]//div[contains(@class,'userContent')]/div[contains(.,'";
