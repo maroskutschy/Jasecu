@@ -9,7 +9,6 @@ public class FacebookMakePostPage extends BasicActions {
     @FindBy (xpath = "//div[@role='presentation']//div[@data-block='true']")
     private WebElement postTextArea;
 
-    //@FindBy (xpath = "//button[@type='submit']//span[contains(., 'Post')]")
     @FindBy (xpath = "(//div[contains(., 'Post') and @role='button' and @tabindex=0])[2]")
     private WebElement postButton;
 
@@ -24,7 +23,6 @@ public class FacebookMakePostPage extends BasicActions {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        //sendKeysViaActionsClass(postTextArea, text, "postTextArea");
         sendKeys(postTextArea, text, "postTextArea");
         click(postButton, "postButton");
         try {

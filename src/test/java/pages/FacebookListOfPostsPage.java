@@ -8,15 +8,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class FacebookListOfPostsPage extends BasicActions {
 
-    //@FindBy (xpath = "//div[@class='uiContextualLayerPositioner uiLayer']//li[contains(@class,'MenuItem')]//a//span//span[contains(.,'Delete')]")
     @FindBy (xpath = "//span[@dir='auto' and contains(.,'Delete')]")
     private WebElement deletePostMenuOption;
 
-    //String postTextP1 = "//div[@role='article']//div[contains(@class,'userContentWrapper')]//div[contains(@class,'userContent')]/div[contains(.,'";
     String postTextP1 = "//div[@dir='auto']//div//div//div[contains(., '";
     String getPostTextP2 = "')]";
 
-    //String postMenuButtonP1 =  "(//a[@aria-label='Story options'])[";
     String postMenuButtonP1 =  "(//div[@aria-label='Actions for this post'])[";
     String postMenuButtonP2 = "]";
 

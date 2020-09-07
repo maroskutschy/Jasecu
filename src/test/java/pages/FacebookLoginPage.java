@@ -17,7 +17,6 @@ public class FacebookLoginPage extends BasicActions {
     @FindBy ( name = "pass")
     private WebElement password;
 
-    //@FindBy ( xpath = "//input[@data-testid='royal_login_button']")
     @FindBy ( name = "login")
     private WebElement loginButton;
 
@@ -35,9 +34,6 @@ public class FacebookLoginPage extends BasicActions {
     }
 
     public FacebookIncorrectLoginPage unSuccessfulLogin (String email, String password) {
-//        Actions builder = new Actions( driver );
-//        builder.moveToElement( switchToEnglishLanguage ).click().build().perform();
-//        click(switchToEnglishLanguage, "switchToEnglishLanguage");
         clear(this.email, "email");
         sendKeys(this.email, email, "email");
         clear(this.password, "password");
