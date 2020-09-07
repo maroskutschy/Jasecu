@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class FacebookDeletePostPage extends BasicActions {
 
-    @FindBy (xpath = "//button[contains(.,'Delete')]")
+    @FindBy (xpath = "//div[@aria-label='Delete']//span[contains(.,'Delete') and @dir='auto']")
     private WebElement deletePostButton;
 
     private String deletePostButtonXpath = "//button[contains(.,'Delete')]";
