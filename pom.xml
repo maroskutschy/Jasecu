@@ -6,7 +6,7 @@
 
     <groupId>jasecu</groupId>
     <artifactId>jasecu</artifactId>
-    <version>1-2020.07.21</version>
+    <version>4-2020.09.07</version>
 
     <dependencies>
         <!-- Cucumber dependencies -->
@@ -67,7 +67,7 @@
             <artifactId>eyes-selenium-java3</artifactId>
             <version>RELEASE</version>
         </dependency>
-        <!-- This Percy dependency -->
+        <!-- This is the Percy dependency -->
         <dependency>
             <groupId>io.percy</groupId>
             <artifactId>percy-java-selenium</artifactId>
