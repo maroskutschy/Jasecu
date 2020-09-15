@@ -5,7 +5,7 @@
       <parameter name="browser" value="Chrome"></parameter>
       <parameter name="link" value="http://www.facebook.com"></parameter>
       <parameter name="user" value="jasecuframework@gmail.com"></parameter>
-      <parameter name="password" value="Jasecu12"></parameter>
+      <parameter name="password" value="CORRECTPASSWORD"></parameter>
 
   <test name="Facebook" >
    <classes>
