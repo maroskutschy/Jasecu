@@ -12,6 +12,7 @@ import com.applitools.eyes.visualgrid.services.VisualGridRunner;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -135,5 +136,10 @@ public class GeneralStepDefinitions {
 
     public static Eyes getEyes() {
         return eyes;
+    }
+
+    @Given("^And pause for \"([^\"]*)\" seconds$")
+    public void pause(String numberOfSeconds) throws Throwable {
+        Thread.sleep(Integer.parseInt(numberOfSeconds));
     }
 }
