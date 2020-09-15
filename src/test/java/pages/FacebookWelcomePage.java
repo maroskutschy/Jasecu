@@ -27,6 +27,7 @@ public class FacebookWelcomePage extends BasicActions {
     }
 
     public FacebookWelcomePage validateFacebookWelcomePage () throws InterruptedException {
+        Thread.sleep(2000);
         checkElementPresent(newsFeed, "newsFeed");
         return this;
     }
