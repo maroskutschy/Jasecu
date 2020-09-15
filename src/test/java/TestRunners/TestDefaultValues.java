@@ -9,7 +9,7 @@ public class TestDefaultValues {
   public static final String DEFAULT_BROWSER = "Chrome";
   public static final String DEFAULT_LINK = "http://www.facebook.com";
   public static final String DEFAULT_USER = "jasecuframework@gmail.com";
-  public static final String DEFAULT_PASSWORD = "Jasecu12";
+  public static final String DEFAULT_PASSWORD = "CORRECTPASSWORD";
 
   private static String operatingSystem;
   private static String browser;
