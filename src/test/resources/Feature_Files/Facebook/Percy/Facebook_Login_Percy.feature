@@ -2,7 +2,7 @@ Feature: Login to Facebook with Percy Validation
 
   Scenario: Successful Login to Facebook with specified credentials and Percy validation
 
-    Given I successfully login to facebook with email "jasecuframework@gmail.com" and password "CORRECTPASSWORD"
+    When I login to facebook with default credentials
     Then Facebook Welcome Page is successfully displayed
     And I make Percy Visual Test validation with screenshot name: "Welcome Page"
 

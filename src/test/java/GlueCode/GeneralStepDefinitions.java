@@ -76,7 +76,7 @@ public class GeneralStepDefinitions {
             // Initialize eyes Configuration
             Configuration config = new Configuration();
             // You can get your api key from the Applitools dashboard
-            config.setApiKey("YOUR_APPLITOOLS_EYES_API_KEY");
+            config.setApiKey("VFfUpHzAns9kV3ymgDJ3SyydpnnEvDEZDv5UgndNO7Q110");
             config.setBatch(batch);
             // Add browsers with different viewports
             config.addBrowser(1200, 700, BrowserType.CHROME);
