@@ -1,13 +1,12 @@
 package TestRunners;
 
 
-import com.intuit.karate.junit5.Karate;
+import com.intuit.karate.KarateOptions;
+import com.intuit.karate.junit4.Karate;
+import org.junit.runner.RunWith;
 
+@RunWith(Karate.class)
+@KarateOptions (features = "src/test/resources/Feature_Files/API")
 class KarateRunner {
-
-    @Karate.Test
-    Karate testAll() {
-        return Karate.run().feature("src/test/resources/Feature_Files/API");
-    }
 
 }

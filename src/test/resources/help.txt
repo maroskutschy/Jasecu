@@ -3,3 +3,6 @@ $x("your_xpath_here")
 
 mvn command:
 clean test -PTestNG -DTestSuite=ParametrizedValues.xml -DoperatingSystem=MacOS -Dbrowser=Chrome -Dlink=http://www.facebook.com -Duser=jasecuframework@gmail.com -Dpassword=CORRECTPASSWORD
+
+mvn command karate api:
+clean test -PJUnit -Dtest=KarateRunner -DfailIfNoTests=false
