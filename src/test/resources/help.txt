@@ -6,3 +6,5 @@ clean test -PTestNG -DTestSuite=ParametrizedValues.xml -DoperatingSystem=MacOS -
 
 mvn command karate api:
 clean test -PJUnit -Dtest=KarateRunner -DfailIfNoTests=false
+for Jenkins jobs: add following as 'Post Build action': 'archive the artifacts' : 'target/surefire-reports/'
+> to have results in each build
