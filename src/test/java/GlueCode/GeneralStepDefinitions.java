@@ -30,9 +30,15 @@ public class GeneralStepDefinitions {
     public static Eyes eyes;
     public static VisualGridRunner visualGridRunner;
     public static BatchInfo batch;
+    private static String scenarioName;
+
 
     @Before
     public void openBrowserWithLink(Scenario scenario) throws Throwable {
+
+        if (!scenario.getName().contains("Galen")) {
+            scenarioName = scenario.getName().replaceAll( " ", "_" );
+        }
 
         Map<String, Object> prefs = new HashMap<String, Object>();
         // Set the notification setting it will override the default setting
@@ -136,6 +142,9 @@ public class GeneralStepDefinitions {
 
     public static Eyes getEyes() {
         return eyes;
+    }
+    public static String getScenarioName() {
+        return scenarioName;
     }
 
     @Given("^And pause for \"([^\"]*)\" seconds$")
