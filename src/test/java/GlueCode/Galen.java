@@ -53,16 +53,16 @@ public class Galen {
         HtmlReportBuilder htmlReportBuilder = new HtmlReportBuilder();
 
         //Create a report under /target folder based on tests list
-        htmlReportBuilder.build(tests, "target//" + scenarioName + "-" + fileName + "//galen_report");
+        htmlReportBuilder.build(tests, "target//Galen//" + scenarioName + "-" + fileName + "//galen_report");
 
         //If layoutReport has errors Assert Fail
         if (layoutReport.errors() > 0)
         {
-            Assert.fail( "Galen Layout test of scenario: " + scenarioName + "-" + fileName + " failed, see report here: " + "file:///" + System.getProperty( "user.dir") + "\\target\\" + scenarioName + "-" + fileName + "\\galen_report\\report.html");
+            Assert.fail( "Galen Layout test of scenario: " + scenarioName + "-" + fileName + " failed, see report here: " + "file:///" + System.getProperty( "user.dir") + "\\target\\Galen\\" + scenarioName + "-" + fileName + "\\galen_report\\report.html");
             //Assert.fail( "Galen Layout test of scenario: " + scenarioName + " failed, see report here: " + "<a href=\"file:///" + System.getProperty("user.dir") + "\\target\\" + scenarioName + "\\galen_report\\report.html\">Galen report</a>");
 
         } else {
-            LOGGER.info( "Galen Layout test of scenario: " + scenarioName + "-" + fileName + " PASSED, see report here: " + "file:///" + System.getProperty( "user.dir") + "\\target\\" + scenarioName + "-" + fileName + "\\galen_report\\report.html" );
+            LOGGER.info( "Galen Layout test of scenario: " + scenarioName + "-" + fileName + " PASSED, see report here: " + "file:///" + System.getProperty( "user.dir") + "\\target\\Galen\\" + scenarioName + "-" + fileName + "\\galen_report\\report.html" );
         }
 
     }
