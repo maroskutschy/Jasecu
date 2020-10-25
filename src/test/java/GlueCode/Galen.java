@@ -27,14 +27,7 @@ public class Galen {
 
     @And("^I validate page using Galen Framework \"([^\"]*)\" file$")
     public void validatePageUsingGalenSpecFile(String fileName) throws Throwable {
-        //Galen galen = new Galen();
-        //galen.checkGalenLayout(fileName);
-        //load("http://example.com", 1024, 768);
-        //////////////////checkLayout(driver, fileName, asList("mobile"));
-        //Create a layoutReport object
-        //checkLayout function checks the layout and returns a LayoutReport object
 
-//        Galen galen = new Galen();
         LayoutReport layoutReport = checkLayout( driver, "/specs/" + fileName+ ".gspec", Arrays.asList( "desktop"));
 
         //Create a tests list
