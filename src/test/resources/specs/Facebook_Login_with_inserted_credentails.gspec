@@ -6,12 +6,10 @@
 = Main section =
 
     email:
-        text is "jasecuframework@gmail.com"
-        #ocr text is "jasecuframework@gmail.com"
-        
+        text is "jasecuframework@gmail.comX"
+
     password:
         text is "Jasecu12"
-        #ocr text is "Jasecu12"
 
 
 
