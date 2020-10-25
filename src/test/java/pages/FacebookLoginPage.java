@@ -20,6 +20,10 @@ public class FacebookLoginPage extends BasicActions {
     @FindBy ( name = "login")
     private WebElement loginButton;
 
+    @FindBy ( xpath = "//button[@data-testid='cookie-policy-banner-accept']")
+    private WebElement acceptCookies;
+
+
     public FacebookLoginPage(WebDriver driver) {
         super( driver );
     }
@@ -29,6 +33,7 @@ public class FacebookLoginPage extends BasicActions {
         sendKeys(this.email, email, "email");
         clear(this.password, "password");
         sendKeys(this.password, password, "password");
+        click(acceptCookies, "acceptCookies");
         click(loginButton,"loginButton");
         return new FacebookWelcomePage (getDriver());
     }
@@ -38,8 +43,16 @@ public class FacebookLoginPage extends BasicActions {
         sendKeys(this.email, email, "email");
         clear(this.password, "password");
         sendKeys(this.password, password, "password");
+        click(acceptCookies, "acceptCookies");
         click(loginButton,"loginButton");
         return new FacebookIncorrectLoginPage (getDriver());
+    }
+
+    public void populateEmailAndPassword (String email, String password) {
+        clear(this.email, "email"  );
+        sendKeys(this.email, email, "email"  );
+        clear( this.password, "password" );
+        sendKeys( this.password, password, "password" );
     }
 
 }

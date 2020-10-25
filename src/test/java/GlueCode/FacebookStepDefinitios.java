@@ -3,6 +3,7 @@ package GlueCode;
 import TestRunners.TestDefaultValues;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
 import org.openqa.selenium.WebDriver;
 import pages.*;
 
@@ -19,6 +20,7 @@ public class FacebookStepDefinitios {
     private FacebookMakePostPage facebookMakePostPage;
     private FacebookListOfPostsPage facebookListOfPostsPage;
     private FacebookDeletePostPage facebookDeletePostPage;
+    private FacebookWelcomePage facebookWellcomePage;
 
     @Given ("^I delete following post from the top:$")
     public void deleteThePostWithText(DataTable orderOfPosts) throws Throwable {
@@ -75,6 +77,12 @@ public class FacebookStepDefinitios {
     @Given ("^switch to News Feed Most Recent option$")
     public void swithToNewsFeedMostRecentOption() throws Throwable {
         facebookWelcomePage.swithToNewsFeedMostRecentOption();
+    }
+
+    @When("^I populate values: email \"([^\"]*)\" , password \"([^\"]*)\"$")
+    public void populateEmailAndPassword(String email, String password) throws Throwable {
+        facebookLoginPage = new FacebookLoginPage(driver  );
+        facebookLoginPage.populateEmailAndPassword(email, password  );
     }
 
 }
