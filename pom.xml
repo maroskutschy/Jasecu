@@ -6,7 +6,7 @@
 
     <groupId>jasecu</groupId>
     <artifactId>jasecu</artifactId>
-    <version>8-2020.11.XX</version>
+    <version>8-2020.12.22</version>
 
     <dependencies>
         <!-- Cucumber dependencies -->
