@@ -4,8 +4,8 @@ import org.apache.commons.lang3.StringUtils;
 
 public class TestDefaultValues {
 
-  //public static final String DEFAULT_OPERATING_SYSTEM = "Windows";
-  public static final String DEFAULT_OPERATING_SYSTEM = "MacOS";
+  public static final String DEFAULT_OPERATING_SYSTEM = "Windows";
+  //public static final String DEFAULT_OPERATING_SYSTEM = "MacOS";
   public static final String DEFAULT_BROWSER = "Chrome";
   public static final String DEFAULT_LINK = "http://www.facebook.com";
   public static final String DEFAULT_USER = "jasecuframework@gmail.com";
