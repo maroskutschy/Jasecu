@@ -55,4 +55,8 @@ public class FacebookLoginPage extends BasicActions {
         sendKeys( this.password, password, "password" );
     }
 
+    public void clickOnAcceptCookies () {
+        click(acceptCookies, "acceptCookies");
+    }
+
 }

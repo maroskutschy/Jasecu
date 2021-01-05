@@ -81,8 +81,14 @@ public class FacebookStepDefinitios {
 
     @When("^I populate values: email \"([^\"]*)\" , password \"([^\"]*)\"$")
     public void populateEmailAndPassword(String email, String password) throws Throwable {
-        facebookLoginPage = new FacebookLoginPage(driver  );
+        //facebookLoginPage = new FacebookLoginPage(driver  );
         facebookLoginPage.populateEmailAndPassword(email, password  );
+    }
+
+    @Given ("^I click on accept cookies$")
+    public void clickOnAcceptCookies() throws Throwable {
+        facebookLoginPage = new FacebookLoginPage(driver);
+        facebookLoginPage.clickOnAcceptCookies();
     }
 
 }
