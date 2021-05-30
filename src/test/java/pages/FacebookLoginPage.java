@@ -20,7 +20,7 @@ public class FacebookLoginPage extends BasicActions {
     @FindBy ( name = "login")
     private WebElement loginButton;
 
-    @FindBy ( xpath = "//button[@data-testid='cookie-policy-banner-accept']")
+    @FindBy ( xpath = "//button[@data-cookiebanner='accept_button']")
     private WebElement acceptCookies;
 
 
