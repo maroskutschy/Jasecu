@@ -25,3 +25,5 @@ Feature: Login to Facebook with Percy Validation
     #export M2=$M2_HOME/bin
     #export PATH=$M2:$PATH
     #npx percy exec -- mvn install -PTestNG -DTestSuite=FacebookPercy.xml
+    # for Jenkins job (parametrized):
+    # npx percy exec -- mvn install -PTestNG -DTestSuite=FacebookParametrizedValuesPercy.xml -DoperatingSystem=Windows -Dbrowser=Chrome -Dlink=http://www.facebook.com -Duser=jasecuframework@gmail.com -Dpassword=CORRECTPASSWORD
