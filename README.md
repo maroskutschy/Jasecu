@@ -4,6 +4,14 @@
 
  [http://jasecu.mablog.eu/blog/](http://jasecu.mablog.eu/blog/)
 
+**Instagram:**
+
+[https://www.instagram.com/jasecu_by_maros/](https://www.instagram.com/jasecu_by_maros/)
+
+**Facebook:**
+
+[https://www.facebook.com/profile.php?id=100071928812026](https://www.facebook.com/profile.php?id=100071928812026)
+
 <br/><br/>
 
 
