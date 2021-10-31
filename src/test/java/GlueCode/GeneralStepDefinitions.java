@@ -27,6 +27,7 @@ public class GeneralStepDefinitions {
     private String operatingSystem = TestDefaultValues.getOperatingSystem();
     private String browser = TestDefaultValues.getBrowser();
     private String link = TestDefaultValues.getLink();
+    private String applitoolsApiKey = TestDefaultValues.getApplitoolsApiKey();
     public static Eyes eyes;
     public static VisualGridRunner visualGridRunner;
     public static BatchInfo batch;
@@ -83,7 +84,7 @@ public class GeneralStepDefinitions {
             // Initialize eyes Configuration
             Configuration config = new Configuration();
             // You can get your api key from the Applitools dashboard
-            config.setApiKey("YOUR_APPLITOOLS_EYES_API_KEY");
+            config.setApiKey(applitoolsApiKey);
             config.setBatch(batch);
             // Add browsers with different viewports
             config.addBrowser(1200, 700, BrowserType.CHROME);

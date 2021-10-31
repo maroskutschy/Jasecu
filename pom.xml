@@ -189,6 +189,7 @@
                                 <link>${link}</link>
                                 <user>${user}</user>
                                 <password>${password}</password>
+                                <applitoolsApiKey>${applitoolsApiKey}</applitoolsApiKey>
                             </systemPropertyVariables>
                         </configuration>
                     </plugin>

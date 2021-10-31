@@ -9,13 +9,15 @@ public class TestDefaultValues {
   public static final String DEFAULT_BROWSER = "Chrome";
   public static final String DEFAULT_LINK = "http://www.facebook.com";
   public static final String DEFAULT_USER = "jasecuframework@gmail.com";
-  public static final String DEFAULT_PASSWORD = "CORRECTPASSWORD";
+  public static final String DEFAULT_PASSWORD = "CORRECT_PASSWORD";
+  public static final String DEFAULT_APPLITOOLSAPIKEY = "YOUR_APLITOOLS_API_KEY";
 
   private static String operatingSystem;
   private static String browser;
   private static String link;
   private static String user;
   private static String password;
+  private static String applitoolsApiKey;
 
   public static String getOperatingSystem() { return StringUtils.isEmpty( operatingSystem ) ? DEFAULT_OPERATING_SYSTEM : operatingSystem; }
 
@@ -53,6 +55,14 @@ public class TestDefaultValues {
 
   public static void setPassword(String password) {
     TestDefaultValues.password = password;
+  }
+
+  public static String getApplitoolsApiKey() {
+    return StringUtils.isEmpty( applitoolsApiKey ) ? DEFAULT_APPLITOOLSAPIKEY : applitoolsApiKey;
+  }
+
+  public static void setApplitoolsApiKey(String applitoolsApiKey) {
+    TestDefaultValues.applitoolsApiKey = applitoolsApiKey;
   }
 
 
