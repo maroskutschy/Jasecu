@@ -7,7 +7,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = { "pretty",
-		"Utils.ReportPortalScenarioReporterNoSuite" }, features = "src/test/resources/Feature_Files/Facebook/Login_Sample", glue={"GlueCode"})
+		"Utils.ReportPortalScenarioReporterNoSuite" },
+		features = "src/test/resources/Feature_Files/Facebook/Login_Sample",
+		glue={"GlueCode"},
+		format = {"html:target/site/cucumber-pretty", "json:target/cucumber.json", "rerun:rerun.txt"})
 public class TestRunnerFacebookLoginSampleReportPortalJunit {
 
 		@BeforeClass
