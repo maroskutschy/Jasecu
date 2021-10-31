@@ -6,7 +6,7 @@
 
     <groupId>jasecu</groupId>
     <artifactId>jasecu</artifactId>
-    <version>11-2021.05.30</version>
+    <version>12-2021.10.31</version>
 
     <dependencies>
         <!-- Cucumber dependencies -->
@@ -19,6 +19,16 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>2.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>1.2.4</version>
         </dependency>
         <dependency>
             <groupId>net.masterthought</groupId>
@@ -172,6 +182,15 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>2.22.2</version>
+                        <configuration>
+                            <systemPropertyVariables>
+                                <operatingSystem>${operatingSystem}</operatingSystem>
+                                <browser>${browser}</browser>
+                                <link>${link}</link>
+                                <user>${user}</user>
+                                <password>${password}</password>
+                            </systemPropertyVariables>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
