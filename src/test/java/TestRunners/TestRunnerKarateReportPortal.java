@@ -9,14 +9,16 @@ import com.intuit.karate.RunnerOptions;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 
+
 import java.io.IOException;
 import java.util.Collections;
 
 /**
  * This class is to execute tests Karate Tests and send results to report Portal
  */
-@KarateOptions(features = "src/test/resources/Feature_Files/API")
-class KarateReportPortal {
+
+@KarateOptions(features = "src/test/java/TestRunners/featuresKarate/feature2")
+class TestRunnerKarateReportPortal {
 
     /* Initialize the logger */
     private static final Logger log = LogHelper.getLogger();
