@@ -5,4 +5,4 @@ Feature: API example
     * url 'https://jsonplaceholder.typicode.com'
     Given path 'users'
     When method get
-    Then status 200
+    Then status 900
