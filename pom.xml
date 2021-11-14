@@ -11,6 +11,7 @@
     <modules>
         <module>galen</module>
         <module>karate</module>
+        <module>general</module>
     </modules>
 
     <dependencies>

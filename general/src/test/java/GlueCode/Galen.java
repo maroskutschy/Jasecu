@@ -1,4 +1,4 @@
-//package GlueCode;
+package GlueCode;//package GlueCode;
 //
 //import GlueCode.GeneralStepDefinitions;
 //import com.galenframework.reports.GalenTestInfo;
