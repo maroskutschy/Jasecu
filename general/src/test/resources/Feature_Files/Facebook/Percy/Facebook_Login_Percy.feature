@@ -16,7 +16,7 @@ Feature: Login to Facebook with Percy Validation
     # in cmd/terminal > switch to root of jasecu framework project
     # mac/linux: perform command: export PERCY_TOKEN=YOUR_PERCY_TOKEN
     # windows: perform command: set PERCY_TOKEN=YOUR_PERCY_TOKEN
-    # perform command: npx percy exec -- mvn install -PJUnit -Dtest=TestRunnerFacebookPercyReportPortalJunit -DfailIfNoTests=false -DoperatingSystem=Windows -Dbrowser=Chrome -Dlink=http://www.facebook.com -Duser=jasecuframework@gmail.com -Dpassword=CORRECTPASSWORD
+    # perform command: npx percy exec -- mvn install -pl :general -PJUnit -Dtest=TestRunnerFacebookPercyReportPortalJunit -DfailIfNoTests=false -DoperatingSystem=Windows -Dbrowser=Chrome -Dlink=http://www.facebook.com -Duser=jasecuframework@gmail.com -Dpassword=CORRECTPASSWORD -f ./general
     # settings of Jenkins job (example of running on Mac slave):
     # Build: Execute shell:
     #export PERCY_TOKEN=YOUR_PERCY_TOKEN
