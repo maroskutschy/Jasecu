@@ -21,6 +21,13 @@
 
 <br/><br/>
 
+TODO 2:
+- why is applitools job red when there is applitools differency (before modules it was unstable)?
+- move Galen files to specific module + add dependency + test on Jenkins
+(do it in branch: modules_karate_3)
+- test on jenkins
+- remove profiles
+
 TODO: module for karate (with + without reportportal = old and new way)
 = now in special branch - karate_reportportal (revreted for master)
 = get rid of testng 1st dependency
