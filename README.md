@@ -21,4 +21,10 @@
 
 <br/><br/>
 
+TODO: module for karate (with + without reportportal = old and new way)
+= now in special branch - karate_reportportal (revreted for master)
+= get rid of testng 1st dependency
+
+= and create separate module for Galen
+
 
