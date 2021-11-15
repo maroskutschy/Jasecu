@@ -1,0 +1,31 @@
+# defining objects
+@objects
+    email           id      email
+    password        id      pass
+    loginButton     xpath   //button[@data-testid='royal_login_button']
+    loginContainer  xpath   //form[@data-testid='royal_login_form']
+
+= Main section =
+
+    email:
+        above password 11 to 13 px
+        inside loginContainer 15 to 17 px left
+        width 364 px
+        aligned vertically all password
+
+    password:
+        above loginButton
+        below email 11 to 13 px
+        inside loginContainer  15 to 16 px left
+        width 364 px
+        width 100% of email/width
+
+    loginButton:
+        below password 11 to 13 px
+        inside loginContainer 15 to 17 px right
+        width 364 px
+        width < 370 px
+
+    loginContainer:
+        visible
+        contains email, password, loginButton

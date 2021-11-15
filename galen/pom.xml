@@ -11,6 +11,27 @@
 
     <artifactId>galen</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>jasecu</groupId>
+            <artifactId>general</artifactId>
+            <version>13-2021.10.31</version>
+        </dependency>
+        <dependency>
+            <groupId>jasecu</groupId>
+            <artifactId>general</artifactId>
+            <version>13-2021.10.31</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        <!-- This is Galen dependency -->
+            <dependency>
+                <groupId>com.galenframework</groupId>
+                <artifactId>galen-java-support</artifactId>
+                <version>2.3.0</version>
+            </dependency>
+    </dependencies>
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>

@@ -22,10 +22,12 @@
 <br/><br/>
 
 TODO 2:
-- why is applitools job red when there is applitools differency (before modules it was unstable)?
-- move Galen files to specific module + add dependency + test on Jenkins
+- Galen files copied to Galen module = running ok from ff, as Junit,
+  but problem to run as maven build = why ?
+  once fixed, then: + test on Jenkins
 (do it in branch: modules_karate_3)
-- test on jenkins
+- test if other FF works ok from general + karate
+- remove files from general (copied to galen)  
 - remove profiles
 
 TODO: module for karate (with + without reportportal = old and new way)

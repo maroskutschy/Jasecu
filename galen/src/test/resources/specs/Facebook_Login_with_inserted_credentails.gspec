@@ -1,0 +1,17 @@
+# defining objects
+@objects
+    email       id      email
+    password    id      pass
+    
+= Main section =
+
+    email:
+        text is "jasecuframework@gmail.com"
+
+    password:
+        text is "CORRECTPASSWORD"
+
+
+
+
+
