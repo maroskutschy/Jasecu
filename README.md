@@ -21,6 +21,12 @@
 
 <br/><br/>
 
+2021-11-23:
+Galen maven this works:
+clean install -pl :general -DskipTests -f pom.xml
+clean test -PJUnit -am -pl :galen -Dtest=TestRunnerFacebookGalenJunit -Dmaven.test.failure.ignore=true -DoperatingSystem=Windows -Dbrowser=Chrome -Dlink=http://www.facebook.com -Duser=jasecuframework@gmail.com -Dpassword=XXX -f ./galen
+
+
 TODO 2:
 - Galen files copied to Galen module = running ok from ff, as Junit,
   but problem to run as maven build = why ?
