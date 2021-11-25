@@ -1,0 +1,12 @@
+Xpath example in Chrome Dev tools:
+$x("your_xpath_here")
+
+mvn command:
+clean test -PJUnit -Dtest=TestRunnerFacebookLoginSampleReportPortalJunit -DfailIfNoTests=false -DoperatingSystem=Windows -Dbrowser=Chrome -Dlink=http://www.facebook.com -Duser=jasecuframework@gmail.com -Dpassword=CORRECTPASSWORD
+
+clean test -PTestNG -DTestSuite=ParametrizedValues.xml -DoperatingSystem=MacOS -Dbrowser=Chrome -Dlink=http://www.facebook.com -Duser=jasecuframework@gmail.com -Dpassword=CORRECTPASSWORD
+
+mvn command karate api:
+clean test -PJUnit -Dtest=KarateRunner -DfailIfNoTests=false
+for Jenkins jobs: add following as 'Post Build action': 'archive the artifacts' : 'target/surefire-reports/'
+> to have results in each build
