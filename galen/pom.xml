@@ -5,7 +5,7 @@
     <parent>
         <artifactId>jasecu</artifactId>
         <groupId>jasecu</groupId>
-        <version>15</version>
+        <version>14-2021.11.25</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -15,12 +15,12 @@
         <dependency>
             <groupId>jasecu</groupId>
             <artifactId>general</artifactId>
-            <version>15</version>
+            <version>14-2021.11.25</version>
         </dependency>
         <dependency>
             <groupId>jasecu</groupId>
             <artifactId>general</artifactId>
-            <version>15</version>
+            <version>14-2021.11.25</version>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
