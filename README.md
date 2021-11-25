@@ -314,6 +314,9 @@ If you do not use Reportportal.io, no problem, no results will be sent,
 you will just see messages in the logs informing that it can't send results, but 
 there will be no failures related to it.
 
+Sending results to Reportportal.io works only if you run tests as
+JUnit test or maven build, it does not work when you run it as Feature/Scenario from IntelliJ Cucumber for Java plugin
+
 
 
 
