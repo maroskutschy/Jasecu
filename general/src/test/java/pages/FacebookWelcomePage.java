@@ -9,7 +9,7 @@ public class FacebookWelcomePage extends BasicActions {
     @FindBy (xpath = "//a[@data-testid='left_nav_item_Welcome']//div[contains(., 'Welcome')]")
     private WebElement welcomeLabel;
 
-    @FindBy (xpath = "//div[@role='feed']")
+    @FindBy (xpath = "//div[@role='feed2']")
     private WebElement newsFeed;
 
     @FindBy (xpath = "//span[contains(., 'on your mind')]")
