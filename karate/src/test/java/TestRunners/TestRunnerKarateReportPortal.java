@@ -16,7 +16,7 @@ import java.util.Collections;
  * This class is to execute tests Karate Tests and send results to report Portal
  */
 
-@KarateOptions(features = "src/test/java/TestRunners/featuresKarate")
+@KarateOptions(features = "src/test/java/TestRunners/featuresKarate/features4")
 class TestRunnerKarateReportPortal {
 
     /* Initialize the logger */
