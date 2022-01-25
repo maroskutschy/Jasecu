@@ -54,7 +54,8 @@ public class GeneralStepDefinitions {
         options.addArguments("--disable-extensions");
         options.addArguments("--disabled-new-style-notification");
         options.addArguments("--allow-silent-push");
-        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 
         switch (browser) {
