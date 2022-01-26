@@ -2,8 +2,9 @@ package GlueCode;
 
 import TestRunners.TestDefaultValues;
 import cucumber.api.DataTable;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
 import pages.*;
 
@@ -31,7 +32,7 @@ public class FacebookStepDefinitios {
         }
     }
 
-    @Given ("I login to facebook with default credentials")
+    @When ("I login to facebook with default credentials")
     public void loginToFacebookWithDefaultCredentials() throws Throwable {
         facebookLoginPage = new FacebookLoginPage(driver);
         facebookWelcomePage = facebookLoginPage.successfulLogin(email, password);

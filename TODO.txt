@@ -1,0 +1,7 @@
+- !!! problem with running as Maven build - fix + try to run as JUnit
+- !!! is it possible to send results to ReportPortal ?
+- run all jobs on Jenkins with latest version of Cucumber
+- upgrade java - use latest java 17
+- use fluentlenium over Selenium
+- reportPortal - send name of launch via maven parameter
+- try cucumber reports online (info from console)
