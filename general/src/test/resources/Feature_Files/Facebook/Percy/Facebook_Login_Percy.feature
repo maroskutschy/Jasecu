@@ -16,7 +16,7 @@ Feature: Login to Facebook with Percy Validation
     # in cmd/terminal > switch to root of jasecu framework project
     # mac/linux: perform command: export PERCY_TOKEN=YOUR_PERCY_TOKEN
     # windows: perform command: set PERCY_TOKEN=YOUR_PERCY_TOKEN
-    # perform command: npx percy exec -- mvn install -pl :general -PJUnit -Dtest=TestRunnerFacebookPercyReportPortalJunit -DfailIfNoTests=false -DoperatingSystem=Windows -Dbrowser=Chrome -Dlink=http://www.facebook.com -Duser=jasecuframework@gmail.com -Dpassword=CORRECTPASSWORD -f ./general
+    # perform command: npx percy exec -- mvn install -pl :general -PJUnit -Dtest=TestRunnerFacebookPercyReportPortalJunit -DfailIfNoTests=false -DoperatingSystem=Windows -Dbrowser=Chrome -Dlink=http://www.facebook.com -Duser=USER -Dpassword=CORRECTPASSWORD -Djob.name=JOB_NAME_FOR_REPORTPORTAL -f ./general
     # settings of Jenkins job (example of running on Mac slave):
     # Build: Execute shell:
     #export PERCY_TOKEN=YOUR_PERCY_TOKEN
@@ -24,6 +24,3 @@ Feature: Login to Facebook with Percy Validation
     #export M2_HOME=/usr/local/Cellar/maven/3.2.3/libexec
     #export M2=$M2_HOME/bin
     #export PATH=$M2:$PATH
-    #npx percy exec -- mvn install -PTestNG -DTestSuite=FacebookPercy.xml
-    # for Jenkins job (parametrized):
-    # npx percy exec -- mvn install -PTestNG -DTestSuite=FacebookParametrizedValuesPercy.xml -DoperatingSystem=Windows -Dbrowser=Chrome -Dlink=http://www.facebook.com -Duser=jasecuframework@gmail.com -Dpassword=CORRECTPASSWORD
