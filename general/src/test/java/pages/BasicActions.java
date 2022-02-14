@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.time.Duration;
+
 public class BasicActions {
 
     // Time out in seconds
@@ -23,7 +25,7 @@ public class BasicActions {
     public BasicActions(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements( new AjaxElementLocatorFactory( driver, TIME_OUT ), this );
-        wait = new WebDriverWait( driver, TIME_OUT );
+        wait = new WebDriverWait(driver, Duration.ofSeconds(11) );
     }
 
 
