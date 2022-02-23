@@ -233,7 +233,7 @@ a) When running via IntelliJ
      Install NodeJS
      in cmd/terminal > switch to root of naf framework project
      perform command: npm init
-     perform command: npm install --save-dev @percy/agent
+     perform command: npm install --save-dev @percy/cli
 
      BEFORE EACH RUN:
      in cmd/terminal > switch to root of jasecu framework project
