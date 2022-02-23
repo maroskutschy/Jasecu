@@ -11,7 +11,7 @@ Feature: Login to Facebook with Percy Validation
     # Install NodeJS
     # in cmd/terminal > switch to root of jasecu framework project
     # perform command: npm init
-    # perform command: npm install --save-dev @percy/agent
+    # perform command: npm install --save-dev @percy/cli
     # BEFORE EACH RUN:
     # in cmd/terminal > switch to root of jasecu framework project
     # mac/linux: perform command: export PERCY_TOKEN=YOUR_PERCY_TOKEN
