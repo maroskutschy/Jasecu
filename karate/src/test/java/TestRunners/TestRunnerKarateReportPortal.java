@@ -33,6 +33,8 @@ class TestRunnerKarateReportPortal {
         log.info("| Starting Functional Test Execution |");
         log.info("+------------------------------------+");
 
+        System.setProperty("karate.env", "dev");
+
         RunnerOptions options = RunnerOptions.fromAnnotationAndSystemProperties(null, null, getClass());
         Results results = Runner.parallel(options.getTags(),
                 options.getFeatures(),
